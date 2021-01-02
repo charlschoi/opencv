@@ -8,8 +8,8 @@ from game import Game
 from model import DQN
 
 
-#수정tf.app.flags.DEFINE_boolean("train", False, "학습모드. 게임을 화면에 보여주지 않습니다.")
-FLAGS = True #수정tf.app.flags.FLAGS
+tf.app.flags.DEFINE_boolean(True) #("train", False, "학습모드. 게임을 화면에 보여주지 않습니다.")
+FLAGS = tf.app.flags.FLAGS
 
 # 최대 학습 횟수
 MAX_EPISODE = 2000 #10000
@@ -150,4 +150,4 @@ def main(_):
 
 
 if __name__ == '__main__':
-    #수정tf.app.run()
+    tf.app.run()
